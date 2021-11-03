@@ -1,1 +1,1 @@
-console.log('Hello, Klaytn!')
+export { KlaytnWalletProvider } from './KlaytnWalletProvider'
