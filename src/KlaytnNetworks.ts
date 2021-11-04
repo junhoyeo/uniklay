@@ -17,6 +17,9 @@ export const KlaytnNetworks = {
   mainnet: {
     name: 'Klaytn Cypress',
     chainID: 8217,
+
+    // NOTE: Public EN is outdated for Klaytn Cypress
+    // https://forum.klaytn.com/t/i-cannot-access-the-public-rpc-plz-help/703
     rpcURL: 'https://kaikas.cypress.klaytn.net:8651',
     explorerURL: 'https://scope.klaytn.com',
   },

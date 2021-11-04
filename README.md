@@ -20,6 +20,7 @@ const walletProvider = walletProvider === 'Klip'
 
 const klaytnWallet = new KlaytnWallet({
   networkStage: 'mainnet',
+  networkRpcURL: 'https://your-klaytn-cypress-node.com',
   walletProvider,
 })
 
