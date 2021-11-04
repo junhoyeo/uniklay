@@ -23,6 +23,7 @@ export class KlaytnWallet {
   }
 
   public async initialize() {
+    await this.provider.initialize()
     const klaytnAddress = await this.provider.getKlaytnAddress()
     this.address = klaytnAddress
     return klaytnAddress

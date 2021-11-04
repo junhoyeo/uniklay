@@ -15,6 +15,8 @@ export class KlaytnWalletKaikasProvider implements KlaytnWalletProvider {
     this.klaytn = window.klaytn
   }
 
+  public async initialize() {}
+
   public async getKlaytnAddress() {
     const accounts = await this.klaytn?.enable()
     if (accounts && accounts.length > 0) {

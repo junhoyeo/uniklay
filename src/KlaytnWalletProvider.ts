@@ -5,5 +5,6 @@ export enum KlaytnWalletProviderType {
 
 export type KlaytnWalletProvider = {
   type: KlaytnWalletProviderType
+  initialize: () => Promise<void>
   getKlaytnAddress: () => Promise<string>
 }
