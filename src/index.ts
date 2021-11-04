@@ -1,1 +1,4 @@
-export { KlaytnWalletProvider } from './KlaytnWalletProvider'
+export {
+  KlaytnWalletProvider,
+  KlaytnWalletProviderType,
+} from './KlaytnWalletProvider'

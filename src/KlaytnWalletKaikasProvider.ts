@@ -1,4 +1,5 @@
 import { KlaytnWalletProvider } from './'
+import { KlaytnWalletProviderType } from './KlaytnWalletProvider'
 
 declare global {
   interface Window {
@@ -7,6 +8,7 @@ declare global {
 }
 
 export class KlaytnWalletKaikasProvider implements KlaytnWalletProvider {
+  type = KlaytnWalletProviderType.Kaikas
   klaytn: KlaytnProvider | undefined
 
   constructor() {

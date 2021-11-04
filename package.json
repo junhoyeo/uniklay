@@ -1,6 +1,6 @@
 {
   "name": "uniklay",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "build/index.js",
   "repository": "https://github.com/junhoyeo/uniklay",
   "author": "Junho Yeo <hanaro0704@gmail.com>",
@@ -16,6 +16,7 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
+    "caver-js": "https://github.com/klaytn/caver-js#typescript_tmp",
     "klip-sdk": "^2.0.1"
   }
 }
