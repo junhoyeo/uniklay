@@ -1,7 +1,6 @@
-import { getResult, prepare } from 'klip-sdk'
-
 import { KlaytnWalletProvider } from './'
 import { KlaytnWalletProviderType } from './KlaytnWalletProvider'
+import { KlipSDKModule } from './typings/klip-sdk.module'
 
 type KlaytnWalletKlipProviderOptions = {
   bappName: string
@@ -10,16 +9,26 @@ type KlaytnWalletKlipProviderOptions = {
 export class KlaytnWalletKlipProvider implements KlaytnWalletProvider {
   type = KlaytnWalletProviderType.Klip
   bappName = ''
+  klipSDK: typeof KlipSDKModule | undefined
 
   constructor({ bappName }: KlaytnWalletKlipProviderOptions) {
     this.bappName = bappName
   }
 
+  public async initialize() {
+    this.klipSDK = await import('klip-sdk')
+  }
+
   public async getKlaytnAddress() {
-    const { request_key: requestKey } = await prepare.auth({
+    if (!this.klipSDK) {
+      return Promise.reject(
+        new Error('KlaytnWalletKlipProvider is not initialized'),
+      )
+    }
+    const { request_key: requestKey } = await this.klipSDK.prepare.auth({
       bappName: this.bappName,
     })
-    const { data } = await getResult(requestKey)
+    const { data } = await this.klipSDK.getResult(requestKey)
     const klaytnAddress = data?.klaytn_address
 
     if (klaytnAddress) {
