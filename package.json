@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "main": "build/index.js",
   "repository": "https://github.com/junhoyeo/uniklay",
-  "author": "Junho Yeo <hanaro0704@gmail.com>",
+  "author": "Junho Yeo <i@junho.io>",
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf build",
