@@ -3,11 +3,15 @@ import { getResult, prepare } from 'klip-sdk'
 import { KlaytnWalletProvider } from './'
 import { KlaytnWalletProviderType } from './KlaytnWalletProvider'
 
+type KlaytnWalletKlipProviderOptions = {
+  bappName: string
+}
+
 export class KlaytnWalletKlipProvider implements KlaytnWalletProvider {
   type = KlaytnWalletProviderType.Kilp
   bappName = ''
 
-  constructor(bappName: string) {
+  constructor({ bappName }: KlaytnWalletKlipProviderOptions) {
     this.bappName = bappName
   }
 
