@@ -17,7 +17,7 @@ export const KlaytnNetworks = {
   mainnet: {
     name: 'Klaytn Cypress',
     chainID: 8217,
-    rpcURL: ' https://api.cypress.ozys.net:8651',
+    rpcURL: 'https://kaikas.cypress.klaytn.net:8651',
     explorerURL: 'https://scope.klaytn.com',
   },
 }
