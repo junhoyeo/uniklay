@@ -1,5 +1,6 @@
 {
   "name": "uniklay",
+  "description": "Unified interface module for Klip/Kaikas to interact with the Klaytn blockchain",
   "version": "0.1.0",
   "main": "build/index.js",
   "repository": "https://github.com/junhoyeo/uniklay",
