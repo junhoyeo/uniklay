@@ -1,6 +1,6 @@
 export enum KlaytnWalletProviderType {
-  Kilp = 'klip',
-  Kaikas = 'kalkas',
+  Klip = 'klip',
+  Kaikas = 'kaikas',
 }
 
 export type KlaytnWalletProvider = {

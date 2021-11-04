@@ -8,7 +8,7 @@ type KlaytnWalletKlipProviderOptions = {
 }
 
 export class KlaytnWalletKlipProvider implements KlaytnWalletProvider {
-  type = KlaytnWalletProviderType.Kilp
+  type = KlaytnWalletProviderType.Klip
   bappName = ''
 
   constructor({ bappName }: KlaytnWalletKlipProviderOptions) {
