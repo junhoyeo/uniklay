@@ -1,8 +1,9 @@
 {
   "name": "uniklay",
   "description": "Unified interface module for Klip/Kaikas to interact with the Klaytn blockchain",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "build/index.js",
+  "types": "build/index.d.ts",
   "repository": "https://github.com/junhoyeo/uniklay",
   "author": "Junho Yeo <i@junho.io>",
   "license": "MIT",
@@ -19,5 +20,8 @@
   "dependencies": {
     "caver-js": "https://github.com/klaytn/caver-js#typescript_tmp",
     "klip-sdk": "^2.0.1"
-  }
+  },
+  "files": [
+    "build"
+  ]
 }
